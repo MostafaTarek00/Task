@@ -13,6 +13,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource   {
         homeTableView.register(UINib(nibName: "MainTableViewCell", bundle: nil), forCellReuseIdentifier: "MainTableViewCell")
         homeTableView.register(UINib(nibName: "CategoryProductsSliderTableViewCell", bundle: nil), forCellReuseIdentifier: "CategoryProductsSliderTableViewCell")
         homeTableView.register(UINib(nibName: "ProductsCoverTableViewCell", bundle: nil), forCellReuseIdentifier: "ProductsCoverTableViewCell")
+        homeTableView.register(UINib(nibName: "BrandsTableViewCell", bundle: nil), forCellReuseIdentifier: "BrandsTableViewCell")
 
         homeTableView.delegate = self
         homeTableView.dataSource = self
@@ -39,7 +40,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource   {
         case "categoryProductsSlider":
             let cell = tableView.dequeueReusableCell(withIdentifier: "CategoryProductsSliderTableViewCell", for: indexPath) as! CategoryProductsSliderTableViewCell
             if let banners = home?.data?.banners {
-            cell.configTableCell(data: banners, index: cellIndex)
+                cell.configTableCell(data: banners, index: cellIndex)
             }
             return cell
         case "productsCover":
@@ -52,6 +53,12 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource   {
             let cell = tableView.dequeueReusableCell(withIdentifier: "MainTableViewCell", for: indexPath) as! MainTableViewCell
             if let banners = home?.data?.banners {
                 cell.configTableCell(data: banners, index: cellIndex, type: "categoryCover")
+            }
+            return cell
+        case "brandsSlider":
+            let cell = tableView.dequeueReusableCell(withIdentifier: "BrandsTableViewCell", for: indexPath) as! BrandsTableViewCell
+            if let banners = home?.data?.banners {
+                cell.configTableCell(data: banners, index: cellIndex)
             }
             return cell
         default:

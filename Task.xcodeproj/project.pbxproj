@@ -12,6 +12,10 @@
 		8505792D2816B03100EA1E92 /* ProductsCoverTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8505792B2816B03100EA1E92 /* ProductsCoverTableViewCell.xib */; };
 		850579342816C3BB00EA1E92 /* CategoryCoverCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850579322816C3BB00EA1E92 /* CategoryCoverCollectionViewCell.swift */; };
 		850579352816C3BB00EA1E92 /* CategoryCoverCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 850579332816C3BB00EA1E92 /* CategoryCoverCollectionViewCell.xib */; };
+		850579382816D27100EA1E92 /* BrandsSliderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850579362816D27000EA1E92 /* BrandsSliderCollectionViewCell.swift */; };
+		850579392816D27100EA1E92 /* BrandsSliderCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 850579372816D27000EA1E92 /* BrandsSliderCollectionViewCell.xib */; };
+		8505793C2816D99B00EA1E92 /* BrandsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8505793A2816D99B00EA1E92 /* BrandsTableViewCell.swift */; };
+		8505793D2816D99B00EA1E92 /* BrandsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8505793B2816D99B00EA1E92 /* BrandsTableViewCell.xib */; };
 		85DAFD502811606300ADA64B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85DAFD4F2811606300ADA64B /* Assets.xcassets */; };
 		85DAFD532811606300ADA64B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85DAFD512811606300ADA64B /* LaunchScreen.storyboard */; };
 		85DAFD732811609300ADA64B /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DAFD5B2811609300ADA64B /* View.swift */; };
@@ -69,6 +73,10 @@
 		8505792B2816B03100EA1E92 /* ProductsCoverTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductsCoverTableViewCell.xib; sourceTree = "<group>"; };
 		850579322816C3BB00EA1E92 /* CategoryCoverCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCoverCollectionViewCell.swift; sourceTree = "<group>"; };
 		850579332816C3BB00EA1E92 /* CategoryCoverCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCoverCollectionViewCell.xib; sourceTree = "<group>"; };
+		850579362816D27000EA1E92 /* BrandsSliderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandsSliderCollectionViewCell.swift; sourceTree = "<group>"; };
+		850579372816D27000EA1E92 /* BrandsSliderCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BrandsSliderCollectionViewCell.xib; sourceTree = "<group>"; };
+		8505793A2816D99B00EA1E92 /* BrandsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandsTableViewCell.swift; sourceTree = "<group>"; };
+		8505793B2816D99B00EA1E92 /* BrandsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BrandsTableViewCell.xib; sourceTree = "<group>"; };
 		85DAFD432811606100ADA64B /* Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Task.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85DAFD4F2811606300ADA64B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		85DAFD522811606300ADA64B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -315,6 +323,7 @@
 				85DAFDBE2811754900ADA64B /* MainTableViewCell.xib */,
 				85DAFDD8281190CC00ADA64B /* CategoryProductsSliderTableViewCell.xib */,
 				8505792B2816B03100EA1E92 /* ProductsCoverTableViewCell.xib */,
+				8505793B2816D99B00EA1E92 /* BrandsTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -325,6 +334,7 @@
 				85DAFDBD2811754900ADA64B /* MainTableViewCell.swift */,
 				85DAFDD7281190CC00ADA64B /* CategoryProductsSliderTableViewCell.swift */,
 				8505792A2816B03100EA1E92 /* ProductsCoverTableViewCell.swift */,
+				8505793A2816D99B00EA1E92 /* BrandsTableViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -344,6 +354,7 @@
 				85DAFDC42811761100ADA64B /* BlocksCollectionViewCell.xib */,
 				85DAFDDC281191B400ADA64B /* ProductCollectionViewCell.xib */,
 				850579332816C3BB00EA1E92 /* CategoryCoverCollectionViewCell.xib */,
+				850579372816D27000EA1E92 /* BrandsSliderCollectionViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -354,6 +365,7 @@
 				85DAFDC32811761100ADA64B /* BlocksCollectionViewCell.swift */,
 				85DAFDDB281191B400ADA64B /* ProductCollectionViewCell.swift */,
 				850579322816C3BB00EA1E92 /* CategoryCoverCollectionViewCell.swift */,
+				850579362816D27000EA1E92 /* BrandsSliderCollectionViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -454,6 +466,7 @@
 				85DAFDDA281190CC00ADA64B /* CategoryProductsSliderTableViewCell.xib in Resources */,
 				85DAFD532811606300ADA64B /* LaunchScreen.storyboard in Resources */,
 				85DAFD822811609300ADA64B /* AlertView.xib in Resources */,
+				850579392816D27100EA1E92 /* BrandsSliderCollectionViewCell.xib in Resources */,
 				85DAFDB2281172D100ADA64B /* Color.xcassets in Resources */,
 				85DAFDAA2811719900ADA64B /* Cairo-ExtraBold.ttf in Resources */,
 				85DAFDC02811754900ADA64B /* MainTableViewCell.xib in Resources */,
@@ -469,6 +482,7 @@
 				85DAFDAF281171A900ADA64B /* Cairo-SemiBold.ttf in Resources */,
 				85DAFDAC2811719E00ADA64B /* Cairo-Light.ttf in Resources */,
 				85DAFDAB2811719B00ADA64B /* Cairo-ExtraLight.ttf in Resources */,
+				8505793D2816D99B00EA1E92 /* BrandsTableViewCell.xib in Resources */,
 				85DAFDDE281191B400ADA64B /* ProductCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -535,6 +549,7 @@
 				85DAFDB82811741100ADA64B /* HomeViewController.swift in Sources */,
 				85DAFD832811609300ADA64B /* Gradient.swift in Sources */,
 				85DAFDBF2811754900ADA64B /* MainTableViewCell.swift in Sources */,
+				8505793C2816D99B00EA1E92 /* BrandsTableViewCell.swift in Sources */,
 				85DAFD812811609300ADA64B /* PaddingLabel.swift in Sources */,
 				85DAFD882811609300ADA64B /* CardCusstomView.swift in Sources */,
 				85DAFD7F2811609300ADA64B /* iOSDevCenters+GIF.swift in Sources */,
@@ -556,6 +571,7 @@
 				85DAFD762811609300ADA64B /* CusstomLable.swift in Sources */,
 				8505792C2816B03100EA1E92 /* ProductsCoverTableViewCell.swift in Sources */,
 				85DAFD892811609300ADA64B /* AppDelegate.swift in Sources */,
+				850579382816D27100EA1E92 /* BrandsSliderCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

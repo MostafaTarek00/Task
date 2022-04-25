@@ -17,6 +17,7 @@ class ProductsCoverTableViewCell: UITableViewCell {
             productCollectionView.reloadData()
         }
     }
+
     override func awakeFromNib() {
         super.awakeFromNib()
         setUpCollectionView()

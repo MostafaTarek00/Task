@@ -16,19 +16,21 @@ class CategoryProductsSliderTableViewCell: UITableViewCell {
             productCollectionView.reloadData()
         }
     }
+   
+
     override func awakeFromNib() {
         super.awakeFromNib()
         setUpCollectionView()
         // Initialization code
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
+    override func setSelected(_ selected: Bool, animated: Bool ) {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
     }
     
-    func configTableCell(  data: [Banner] , index : Int)  {
+    func configTableCell(  data: [Banner] , index : Int )  {
         if let name = data[index].content?.heading {
             categorNameLbl.text = name
         }else{
@@ -38,6 +40,8 @@ class CategoryProductsSliderTableViewCell: UITableViewCell {
         if let products = data[index].content?.products {
             self.products = products
         }
+      
+
     }
     
 }
@@ -55,29 +59,30 @@ extension CategoryProductsSliderTableViewCell : UICollectionViewDelegate , UICol
         productCollectionView.delegate = self
         productCollectionView.dataSource = self
         productCollectionView.register(UINib(nibName: "ProductCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "ProductCollectionViewCell")
-   
+
         
     }
     
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
-      
         return products?.count ?? 0
-    
+       
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
+
+
+          
       
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ProductCollectionViewCell", for: indexPath) as! ProductCollectionViewCell
-            let cellIndex = indexPath.item
-            if let data = products {
-                cell.configCollectionCell(data: data, index: cellIndex)
-            }
-            return cell
-     
-        
+                let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ProductCollectionViewCell", for: indexPath) as! ProductCollectionViewCell
+                let cellIndex = indexPath.item
+                if let data = products {
+                    cell.configCollectionCell(data: data, index: cellIndex)
+                }
+                return cell
+          
         
     }
     
@@ -98,9 +103,10 @@ extension CategoryProductsSliderTableViewCell : UICollectionViewDelegate , UICol
 
 extension CategoryProductsSliderTableViewCell : UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize{
-        
+     
             let cellSize = CGSize(width: 140 , height: 310 )
             return cellSize
+           
        
     }
 }
