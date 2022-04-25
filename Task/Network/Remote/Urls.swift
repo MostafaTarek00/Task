@@ -13,7 +13,7 @@ class URLs {
     
     // MARK: - The BasicPath
     
-    static let baseURL = "http://178.128.171.40/task/response.json"
+    static let baseURL = "http://178.128.171.40/"
     
     //  MARK: - Home
     

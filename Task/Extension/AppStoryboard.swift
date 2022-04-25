@@ -10,16 +10,8 @@ import UIKit
 
 enum AppStoryboard : String {
     
-    case Skip
-    case SignUp
-    case SignIn
-    case ForgetPassword
-    case Verification
-    case ResetPassword
     case Home
-    case SingleCategory
-    case SingleStore
-   
+    
  
 
     var instance : UIStoryboard {

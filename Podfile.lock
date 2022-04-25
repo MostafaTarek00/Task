@@ -1,0 +1,71 @@
+PODS:
+  - Alamofire (5.6.0)
+  - IQKeyboardManagerSwift (6.0.4)
+  - MaterialComponents/AnimationTiming (124.2.0)
+  - MaterialComponents/Availability (124.2.0)
+  - MaterialComponents/private/Math (124.2.0)
+  - "MaterialComponents/private/TextControlsPrivate+BaseStyle (124.2.0)":
+    - MaterialComponents/AnimationTiming
+    - MaterialComponents/private/Math
+    - "MaterialComponents/private/TextControlsPrivate+Shared"
+  - "MaterialComponents/private/TextControlsPrivate+OutlinedStyle (124.2.0)":
+    - MaterialComponents/AnimationTiming
+    - MaterialComponents/Availability
+    - MaterialComponents/private/Math
+    - "MaterialComponents/private/TextControlsPrivate+Shared"
+  - "MaterialComponents/private/TextControlsPrivate+Shared (124.2.0)":
+    - MaterialComponents/AnimationTiming
+    - MaterialComponents/private/Math
+    - "MaterialComponents/TextControls+Enums"
+  - "MaterialComponents/private/TextControlsPrivate+TextFields (124.2.0)":
+    - MaterialComponents/private/Math
+    - "MaterialComponents/private/TextControlsPrivate+Shared"
+  - "MaterialComponents/TextControls+BaseTextFields (124.2.0)":
+    - "MaterialComponents/private/TextControlsPrivate+BaseStyle"
+    - "MaterialComponents/private/TextControlsPrivate+Shared"
+    - "MaterialComponents/private/TextControlsPrivate+TextFields"
+    - MDFInternationalization
+  - "MaterialComponents/TextControls+Enums (124.2.0)"
+  - "MaterialComponents/TextControls+OutlinedTextFields (124.2.0)":
+    - MaterialComponents/Availability
+    - "MaterialComponents/private/TextControlsPrivate+OutlinedStyle"
+    - "MaterialComponents/TextControls+BaseTextFields"
+  - MDFInternationalization (3.0.0)
+  - MOLH (1.4.3)
+  - NVActivityIndicatorView (4.5.0):
+    - NVActivityIndicatorView/Presenter (= 4.5.0)
+  - NVActivityIndicatorView/Presenter (4.5.0)
+  - SDWebImage (5.12.5):
+    - SDWebImage/Core (= 5.12.5)
+  - SDWebImage/Core (5.12.5)
+
+DEPENDENCIES:
+  - Alamofire
+  - IQKeyboardManagerSwift (= 6.0.4)
+  - "MaterialComponents/TextControls+OutlinedTextFields"
+  - MOLH
+  - NVActivityIndicatorView (= 4.5.0)
+  - SDWebImage
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - IQKeyboardManagerSwift
+    - MaterialComponents
+    - MDFInternationalization
+    - MOLH
+    - NVActivityIndicatorView
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  Alamofire: 0c07058209f211e3d32824f8e0766d7c44ac83b3
+  IQKeyboardManagerSwift: 36dbe324b4f9793f5f41ba5227f3e7c76dfefd50
+  MaterialComponents: 1a9b2d9d45b1601ae544de85089adc4c464306d4
+  MDFInternationalization: d697c55307816222a55685c4ccb1044ffb030c12
+  MOLH: e45827d200aeb1310641090fd8cd03ad2b42ae72
+  NVActivityIndicatorView: 1e4e3ed79248cf1666af182593c3a2acf0fcf193
+  SDWebImage: 0905f1b7760fc8ac4198cae0036600d67478751e
+
+PODFILE CHECKSUM: 0bf003bc6c2737039ebc840249bdbc1bb49cdd92
+
+COCOAPODS: 1.11.2

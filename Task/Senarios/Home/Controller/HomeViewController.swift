@@ -9,9 +9,12 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet weak var homeTableView: UITableView!
+    var home : Home?
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setUpTableView()
+        getHomeData()
         // Do any additional setup after loading the view.
     }
     

@@ -7,8 +7,8 @@
 
 import Foundation
 
-// MARK: - SingleMedicine
-struct SingleMedicine: Codable {
+// MARK: - Home
+struct Home: Codable {
     let status: Status?
     let data: HomeData?
 }
@@ -17,7 +17,7 @@ struct SingleMedicine: Codable {
 struct HomeData: Codable {
     let popupAd: PopupAd?
     let meta: Meta?
-    let banners: [Banner?]
+    let banners: [Banner]?
 }
 
 // MARK: - Banner

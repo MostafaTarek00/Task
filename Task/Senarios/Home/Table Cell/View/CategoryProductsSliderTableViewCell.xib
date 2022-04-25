@@ -5,7 +5,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -16,23 +15,26 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="207" id="KGk-i7-Jjw" customClass="CategoryProductsSliderTableViewCell" customModule="Task" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="207"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="348" id="KGk-i7-Jjw" customClass="CategoryProductsSliderTableViewCell" customModule="Task" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="348"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="375" height="207"/>
+                <rect key="frame" x="0.0" y="0.0" width="393" height="348"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UFa-9Y-4S5">
-                        <rect key="frame" x="8" y="8" width="37.5" height="30"/>
+                        <rect key="frame" x="347.5" y="8" width="37.5" height="22"/>
                         <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="16"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="f1O-od-D5Q">
-                        <rect key="frame" x="8" y="46" width="367" height="161"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="uP7-Vf-Jc5">
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="f1O-od-D5Q">
+                        <rect key="frame" x="8" y="38" width="377" height="310"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="310" id="WKk-Rq-97Q"/>
+                        </constraints>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="uP7-Vf-Jc5">
                             <size key="itemSize" width="128" height="128"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -43,19 +45,18 @@
                 <constraints>
                     <constraint firstItem="f1O-od-D5Q" firstAttribute="top" secondItem="UFa-9Y-4S5" secondAttribute="bottom" constant="8" id="4M6-FK-nqk"/>
                     <constraint firstItem="f1O-od-D5Q" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="7MU-mn-ncS"/>
-                    <constraint firstAttribute="trailing" secondItem="f1O-od-D5Q" secondAttribute="trailing" id="NEq-6y-dbD"/>
-                    <constraint firstAttribute="bottom" secondItem="f1O-od-D5Q" secondAttribute="bottom" id="S9p-U2-jnN"/>
-                    <constraint firstItem="UFa-9Y-4S5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="eOo-SI-W5m"/>
+                    <constraint firstAttribute="bottom" secondItem="f1O-od-D5Q" secondAttribute="bottom" id="Ey5-Dg-obB"/>
+                    <constraint firstAttribute="trailing" secondItem="f1O-od-D5Q" secondAttribute="trailing" constant="8" id="NEq-6y-dbD"/>
+                    <constraint firstAttribute="trailing" secondItem="UFa-9Y-4S5" secondAttribute="trailing" constant="8" id="g8s-tL-Mfb"/>
                     <constraint firstItem="UFa-9Y-4S5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="qcy-h8-9Bt"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
-            <point key="canvasLocation" x="177.536231884058" y="150.33482142857142"/>
+            <connections>
+                <outlet property="categorNameLbl" destination="UFa-9Y-4S5" id="8OH-CG-0Qt"/>
+                <outlet property="productCollectionView" destination="f1O-od-D5Q" id="c4l-DR-geP"/>
+            </connections>
+            <point key="canvasLocation" x="163.04347826086959" y="197.54464285714286"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
 </document>

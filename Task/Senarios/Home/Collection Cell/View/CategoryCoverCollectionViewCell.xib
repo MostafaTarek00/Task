@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CategoryCoverCollectionViewCell" customModule="Task" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="215" height="234"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="215" height="234"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jnb-mz-Gav">
+                        <rect key="frame" x="1" y="1" width="213" height="231"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pexels-trang-doan-1092730" translatesAutoresizingMaskIntoConstraints="NO" id="7RQ-gq-1OI">
+                                <rect key="frame" x="46.5" y="55.5" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="Dy1-qT-PHY"/>
+                                    <constraint firstAttribute="height" constant="120" id="I00-8a-3GT"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="60"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7RQ-gq-1OI" firstAttribute="centerY" secondItem="Jnb-mz-Gav" secondAttribute="centerY" id="a3A-hO-4WF"/>
+                            <constraint firstItem="7RQ-gq-1OI" firstAttribute="centerX" secondItem="Jnb-mz-Gav" secondAttribute="centerX" id="zhW-2d-2MQ"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Jnb-mz-Gav" secondAttribute="trailing" constant="1" id="3BO-hR-mEQ"/>
+                <constraint firstItem="Jnb-mz-Gav" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="1" id="cHC-xU-Nsz"/>
+                <constraint firstAttribute="bottom" secondItem="Jnb-mz-Gav" secondAttribute="bottom" constant="2" id="hCK-qV-aoC"/>
+                <constraint firstItem="Jnb-mz-Gav" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="1" id="xhW-q4-YJM"/>
+            </constraints>
+            <size key="customSize" width="215" height="234"/>
+            <connections>
+                <outlet property="productCategoryImage" destination="7RQ-gq-1OI" id="krA-zZ-sPh"/>
+                <outlet property="productCategoryView" destination="Jnb-mz-Gav" id="44o-SA-WI5"/>
+            </connections>
+            <point key="canvasLocation" x="257.24637681159425" y="163.39285714285714"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="pexels-trang-doan-1092730" width="2048" height="1536"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
